@@ -10,6 +10,9 @@ import fluidproperties_original as pvt
 import random
 import matplotlib.pyplot as plt
 
+"""
+This code results with the pressure loss gradient in psi/ft 
+"""
 
 def beggsandbrill(P,T,liquid_rate, WC, GOR, gas_grav, oil_grav, wtr_grav, diameter, angle, roughness, Psep,Tsep):
     #P              Pressure, psia
@@ -243,5 +246,5 @@ def beggsandbrill(P,T,liquid_rate, WC, GOR, gas_grav, oil_grav, wtr_grav, diamet
     return total_pres_loss_grad
 
     
-P,T,liquid_rate, WC, GOR, gas_grav, oil_grav, wtr_grav, diameter, angle, roughness, Psep,Tsep=3000,150,100,0.1,100,0.75,35,1.121,3,90,0.005, 114.7,50
-beggsandbrill(P,T,liquid_rate, WC, GOR, gas_grav, oil_grav, wtr_grav, diameter, angle, roughness, Psep,Tsep)
+#P,T,liquid_rate, WC, GOR, gas_grav, oil_grav, wtr_grav, diameter, angle, roughness, Psep,Tsep=3000,150,100,0.1,100,0.75,35,1.121,3,90,0.005, 114.7,50
+#beggsandbrill(P,T,liquid_rate, WC, GOR, gas_grav, oil_grav, wtr_grav, diameter, angle, roughness, Psep,Tsep)
