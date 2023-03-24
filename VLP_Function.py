@@ -84,7 +84,7 @@ bhp_array= VLP(rate_array)    #Runs the VLP function
 ratevspress=pd.DataFrame(data={"Flow Rate":rate_array,"BHP":bhp_array})
 ratevspress.head(10)
 
-plt.plot(rate_array, bhp_array)
+plt.plot(ratevspress["Flow Rate"], ratevspress["BHP"])
 plt.xlabel('Liquid Rate')
 plt.ylabel('Bottomhole Pressure')
 plt.title('VLP Curve')
